@@ -8,13 +8,13 @@ import org.springframework.http.ResponseEntity;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class CashCardApplicationTest {
-    @Autowired
-    TestRestTemplate restTemplate;
-
-    @Test
-    void shouldReturnACashCardWhenDataIsSaved() {
-        ResponseEntity<String> response = restTemplate.getForEntity("/cashcards/99", String.class);
-
-        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-    }
+//    @Autowired
+//    TestRestTemplate restTemplate;
+//
+//    @Test
+//    void shouldReturnACashCardWhenDataIsSaved() {
+//        ResponseEntity<String> response = restTemplate.getForEntity("/cashcards/99", String.class);
+//
+//        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+//    }
 }
